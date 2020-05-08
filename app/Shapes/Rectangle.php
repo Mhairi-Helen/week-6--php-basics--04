@@ -21,13 +21,9 @@ class Rectangle implements ShapeInterface
 
     //methods
 
-    public function area()
+    public function area() : float
     {
         return $this->length * $this->width;
     }
 
 }
-
-$rectangle = new Rectangle(4, 5);
-
-var_dump($rectangle->area());

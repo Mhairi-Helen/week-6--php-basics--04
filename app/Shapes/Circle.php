@@ -18,14 +18,10 @@ class Circle implements ShapeInterface
 
     //methods
 
-    public function area()
+    public function area() : float
     {
         return pi() * pow($this->rad, 2);
     
     }
 
 }
-
-$circle = new Circle(4);
-
-var_dump($circle->area());

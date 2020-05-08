@@ -19,14 +19,12 @@ class Square implements ShapeInterface
 
     //methods
 
-    public function area()
+    public function area() : float
     {
         return pow($this->width, 2);
-        // return $this; - why can't i use this in this instance? is it belcause the expression is returning a value?
+         
+        // - why can't i use this in this instance? is it belcause the expression is returning a value?
+        // IF THERE IS NOTHING TO RETURN, RETURN THIS. IF YOU GET WHAT YOU'RE ASKING, WHY RETURN ANYTHING ELSE.
     }
 
 }
-
-$square = new Square(4);
-
-var_dump($square->area());

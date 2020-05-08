@@ -1,6 +1,11 @@
 <?php
 
+declare (strict_types=1);
+
+namespace App\Shapes;
+
+
 interface ShapeInterface
 {
-    public function area() : ShapeInterface;
+    public function area() : float;
 }
