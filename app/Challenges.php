@@ -4,16 +4,19 @@ declare (strict_types=1);
 
 namespace App;
 
-class Challenges{
+class Challenges
+{
 
     public function start()
     {
-    echo "\nChallenges\n";
+        echo "\nChallenges\n";
 
-    $this->shapes();
+        //loads the challenges
+        $this->shapes();
     }
 
 
+    //challenge 1 ShapeInterface
     public function shapes()
     {
     echo "\n01) Shapes\n";
@@ -30,9 +33,5 @@ class Challenges{
         $rectangle->area() // 20
     );
     }
-
-
-
-
 
 }
